@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="service-user" />
+        <module name="service-order" />
+        <module name="register-server" />
+        <module name="zuul-geteway-server" />
+        <module name="service-product" />
+        <module name="gateway-server" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="service-order" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="gateway-server" options="-parameters" />
+      <module name="register-server" options="-parameters" />
+      <module name="service-order" options="-parameters" />
+      <module name="service-product" options="-parameters" />
+      <module name="service-user" options="-parameters" />
+      <module name="springcloud-0326" options="-parameters" />
+      <module name="zuul-geteway-server" options="-parameters" />
+    </option>
+  </component>
+</project>
